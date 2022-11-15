@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>View</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style>
+      body {
+      background: #0573B1;
+      font-size: 15px;
+      width: 28%;
+      margin: auto;
+      }
+      form {
+      padding: 10px;
+      border-radius: 15px;
+      background: #20EAEC;
+      }
+      .label p{
+          justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+        </style>
+    </head>
+    <body>
+        <div>Result</div>
+        <hr/>
+        <p th:text="${Kirimnama}"></p>
+        <p th:text="${Kirimdate}"></p>
+        <img th:src="${Kirimfile}"style="width:500px;height:300px;">
+    </body>
+</html>
